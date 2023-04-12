@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="./feed.js"></script>
+
+    <style>
+        @font-face {
+            font-family: "instagramFont";
+            src: url(./font/Fontspring-DEMO-blue_vinyl_bold_ps_ot.otf);
+        }
+
+        h2 {
+            font-family: instagramFont, sans-serif;
+            text-align: center;
+        }
+
+        #instafeed {
+            margin: 0 auto;
+            width: 620px;
+            height: 620px;
+            background-color: black;
+            display: flex;
+            justify-content: space-around;
+            align-content: center;
+            flex-wrap: wrap;
+            border-radius: 5px;
+        }
+
+        img {
+            border-radius: 5px;
+            width: 200px;
+            transition: 0.5s ease;
+        }
+
+        img:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 8px white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Instagram Posts</h2>
+    <div id="instafeed"></div>
+
+    <script type="text/javascript">
+        var feed = new Instafeed({
+            accessToken: 'IGQVJWNDZAYZA200a0Q0T0N5REJWaGdPbHhoTDhzVW9tMzdTcGdiYjViWVNTcjhIMGF0Rm40RklmQWFvU3FlRkp5NFVXbmVlWk95cDhZAeGtTZAFFIWERSR3BSS0RDNXhWWDl0V3d4bG9YdVJJUGo4QlNUSgZDZD',
+            limit: 9,
+            // istenirse link ve title değiştirilebilir.
+            template: '<a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a>'
+        });
+        feed.run();
+    </script>
+
+</body>
+
+</html>

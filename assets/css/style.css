@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "instagramFont";
+  src: url(../font/Fontspring-DEMO-blue_vinyl_bold_ps_ot.otf);
+}
+
+@font-face {
+  font-family: "twitterFont";
+  src: url(../font/Chirp-Regular.80fda27a.woff2);
+}
+
+body,
+html {
+  margin: 0;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.twitter {
+  height: 95%;
+  font-family: twitterFont, sans-serif;
+  text-align: center;
+}
+
+.instagram h2 {
+  font-family: instagramFont, sans-serif;
+  text-align: center;
+}
+
+.instagram #instafeed {
+  margin: 0 auto;
+  width: 620px;
+  height: 620px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+
+.instagram img {
+  border-radius: 5px;
+  width: 200px;
+  transition: 0.5s ease;
+}
+
+.instagram img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 8px white;
+}

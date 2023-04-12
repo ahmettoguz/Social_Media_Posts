@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TWITTER WIDGETS -->
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+
+    <title>Document</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+
+      .header {
+        height: 50px;
+      }
+
+      div.row {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      div.col {
+        padding: 2%;
+        border: 1px solid black;
+        width: 30%;
+      }
+
+      img {
+        width: 400px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      Ayrıntılar İçin:
+      <a
+        target="_blank"
+        href="https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview"
+      >
+        https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview
+      </a>
+    </div>
+    <div class="tweets">
+      <div class="row">
+        <div class="col">
+          <a
+            class="twitter-timeline"
+            href="https://https://twitter.com/AhmetOguzErgin"
+            data-tweet-limit="4"
+            data-height="300"
+          >
+            Tweets are loading...
+          </a>
+        </div>
+        <div class="col">
+          <a
+            class="twitter-timeline"
+            href="https://https://twitter.com/AhmetOguzErgin"
+            data-width="300"
+            data-height="300"
+            data-chrome="noheader nofooter noborders noscrollbar transparent"
+            data-tweet-limit="3"
+            data-aria-polite="assertive"
+          >
+            Tweets are loading...
+          </a>
+        </div>
+        <div class="col">
+          <blockquote class="twitter-tweet">
+            <p lang="und" dir="ltr">3/03/2023</p>
+            &mdash; Ahmet Oğuz Ergin (@AhmetOguzErgin)
+            <a
+              href="https://twitter.com/AhmetOguzErgin/status/1631514662675136512?ref_src=twsrc%5Etfw"
+              >March 3, 2023</a
+            >
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    <div class="descriptions">
+      <div class="row">
+        <div class="col"><img src="./img/1.png" alt="" /></div>
+
+        <div class="col"><img src="./img/2.png" alt="" /></div>
+
+        <div class="col"><img src="./img/3.png" alt="" /></div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="https://publish.twitter.com/#"
+            >https://publish.twitter.com/#</a
+          >
+        </div>
+
+        <div class="col">
+          <a href="https://publish.twitter.com/#"
+            >https://publish.twitter.com/#</a
+          >
+        </div>
+
+        <div class="col"><img src="./img/3_1.png" alt="" /></div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  $(function () {
+    // twttr.widgets.load();
+  });
+</script>

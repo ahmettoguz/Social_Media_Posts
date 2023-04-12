@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/icon/favicon/favicon.ico"
+      type="image/ico"
+    />
+    <title>Social Media Posts</title>
+    <!-- jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- jquery end -->
+
+    <!-- instafeed -->
+    <script type="text/javascript" src="./assets/js/feed.js"></script>
+    <!-- instafeed end -->
+
+    <!-- TWITTER WIDGETS -->
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script>
+    <!-- TWITTER WIDGETS end -->
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="instagram">
+        <h2>My Instagram Posts</h2>
+        <div id="instafeed"></div>
+      </div>
+      <div class="twitter">
+        <h2>My Twitter Posts</h2>
+        <div id="twitter">
+          <a
+            class="twitter-timeline"
+            href="https://https://twitter.com/AhmetOguzErgin"
+            data-tweet-limit="4"
+            data-height="600px"
+            data-width="620px"
+          >
+            Tweets are loading...
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var feed = new Instafeed({
+        accessToken:
+          "IGQVJXU0FFMFhVN05qcXhpb3ZAlbWFPeWFxdjhsS0hGR1VjdzJ3b0dUdkpLRlpOZAVhsU2tQaU1yamplRHVjVnk4YVN3VmxLX2NZAZAFNjYW96N05wUHgyNEVieExnYkZAzSDBFa1NNNGFKQTB0dDVjdE10TQZDZD",
+        limit: 9,
+        // istenirse link ve title değiştirilebilir.
+        template:
+          '<a href="{{link}}"><img title="{{caption}}" src="{{image}}" /></a>',
+      });
+      feed.run();
+    </script>
+  </body>
+</html>
