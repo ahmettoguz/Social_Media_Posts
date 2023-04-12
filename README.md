@@ -1,7 +1,7 @@
 <h1 align="center">Social Media Posts</h1> <br>
 
 <div align="center">
-    <img width=150 src="/assets/images/icon/favicon/favicon.ico">
+    <img width=250 src="assets/img/icon/favicon/favicon.ico">
 </div>
 
 <br/>
@@ -21,13 +21,13 @@
 <br/>
 
 <div align="center">
-    <img width=850 src="">
+    <img width=1000 src="/assets/img/demo/demo.png">
 </div>
 
 <br/>
 
 ## Introduction
-This is a web-based project. You can show your latest Instagram and Twitter posts on this page synchronously without using the embed feature.
+This is a web-based project. You can present your latest Instagram and Twitter posts on this page synchronously without using the embed feature or any static operation.
 
 <br/>
 
@@ -42,7 +42,7 @@ This is a web-based project. You can show your latest Instagram and Twitter post
 <br/>
 
 ## Features
-* No need to embed post one by one
+* No need to embed post one by one.
 * The numbers of the post can be specified by user.
 
 <br/>
